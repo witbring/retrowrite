@@ -200,8 +200,8 @@ class Loader():
                 continue
 
             for symbol in section.iter_symbols():
-                if symbol['st_other']['visibility'] == "STV_HIDDEN":
-                    continue
+                #if symbol['st_other']['visibility'] == "STV_HIDDEN":
+                #    continue
 
                 if (symbol['st_info']['type'] == 'STT_FUNC'
                         and symbol['st_shndx'] != 'SHN_UNDEF'):
